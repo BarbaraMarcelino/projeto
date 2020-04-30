@@ -1,11 +1,14 @@
 docs_list_title: ACME Documentation
 docs:
 
-- title: Introduction
-  url: introduction.html
+- title: Biography
+  url: biography.html
 
-- title: Configuration
-  url: configuration.html
+- title: Portfolio
+  url: portfolio.html
 
-- title: Deployment
-  url: deployment.html
+- title: Contacts
+  url: contacts.html
+
+- title: About
+  url: about.html
