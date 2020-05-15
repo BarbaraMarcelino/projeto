@@ -1,34 +1,22 @@
-<footer class="site-footer h-card">
-  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+<footer>
 
-  <div class="wrapper">
-
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li class="p-name">
-            {%- if site.author -%}
-              {{ site.author | escape }}
-            {%- else -%}
-              {{ site.title | escape }}
-            {%- endif -%}
-            </li>
-            {%- if site.email -%}
-            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {%- endif -%}
-        </ul>
+  <div class="container-letter">
+      <img class="letter" src="assets/img/letra.png" alt="Letter B illustration icon">
+      <p class="thankyou">Thank you!</p>
+  </div>
+  <div class="footer-container">
+      <div class="footer1">
+          <p>Let's work together:</p>
+          <p>barbarafm.997@gmail.com</p>
       </div>
-
-      <div class="footer-col footer-col-2">
-        {%- include social.html -%}
+      <div class="footer1">
+          <a href=https://www.linkedin.com/in/barbara-marcelino title="Linkedin">
+              <img class="linkedin" src="assets/img/linkedin.png" alt="Linkedin">
+          </a>
+          <a href=https://www.behance.net/barbaramarcelino title="Behance">
+              <img class="behance" src="assets/img/behance.png" alt="Behance">
+          </a>
       </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{- site.description | escape -}}</p>
-      </div>
-    </div>
 
   </div>
 

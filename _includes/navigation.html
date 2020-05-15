@@ -1,0 +1,11 @@
+<nav>
+    <ul>
+        {% for navigation in site.data.samplelist.docs %}
+        <li>
+            <h4>
+                <a href="{{site.baseurl}}/{{ navigation.url }}">{{ navigation.title }}</a>
+            </h4>
+        </li>
+        {% endfor %}
+    </ul>
+</nav>

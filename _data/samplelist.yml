@@ -1,14 +1,14 @@
 docs_list_title: ACME Documentation
 docs:
 
-- title: Biography
-  url: biography.html
+- title: Home
+  url: 
 
-- title: Portfolio
-  url: portfolio.html
+- title: Projects
+  url: projects
 
-- title: Contacts
-  url: contacts.html
+- title: Formation
+  url: formation
 
-- title: About
-  url: about.html
+- title: Skills
+  url: skills
