@@ -30,8 +30,7 @@ github_username:  #jekyll
 collections:
   works:
     output: false # não quero que cada projeto tenha a sua página
-    # permalink: /works/:path/
-
+    
 # Build settings
 theme: minima
 plugins:
