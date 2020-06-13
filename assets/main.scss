@@ -1,8 +1,6 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
----
 
-//@import "minima";
+---
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap');
 
@@ -157,113 +155,14 @@ header {
 }
 
 /*Página Projects*/
-/*
-.container {
-	position: relative;
-  	display: flex;
-  	align-items: flex-end;
-  	padding-bottom: 50px;
- }
-
- #projetos {
- 	width: 80%;
- 	margin: 0 auto;
- }
-
-
-.images {
-	width: 50%;
-	height: auto;
-	padding-bottom: 25px;
-}
-*/
-
-/*Animação Projeto 1*/
 .container {
     display: grid;
-    grid-template-columns: auto auto;
-  	padding-bottom: 50px;
+	grid-template-columns: auto auto;
+	column-gap: 50px;
+	padding-bottom: 50px;
+	max-width: 1200px;
+	margin: auto;
  }
-
-.animation1, .animation2, .animation3 {
-	position: relative;
-}
-
-.image1, .image2, .image3, .image4, .image5, .image6, .image7, .image8, .image9, .image10, .image11, .image12, .image13, .image14, .image15 {
-    position: absolute;
-    padding-bottom: 25px;
-}
-
-.image1, .image6, .image11 {
-    animation: slide1 25s infinite;
-}
-  
-.image2, .image7, .image12 {
-    animation: slide2 25s infinite;
-}
-  
-.image3, .image8, .image13 {
-    animation: slide3 25s infinite;
-}
-  
-.image4, .image9, .image14 {
-    animation: slide4 25s infinite;
-}
-  
-.image5, .image10, .image15 {
-    animation: slide5 25s infinite;
-}
-
-@keyframes slide1 {
-    0% {opacity: 1}
-    20% { opacity: 0}
-    40% { opacity: 0}
-    60% { opacity: 0}
-    80% { opacity: 0}
-    100% { opacity: 1}
-}
-  
-@keyframes slide2 {
-    0% {opacity: 0}
-    20% { opacity: 1}
-    40% { opacity: 0}
-    60% { opacity: 0}
-    80% { opacity: 0}
-    100% { opacity: 0}
-}
-  
-@keyframes slide3 {
-    0% {opacity: 0}
-    20% { opacity: 0}
-    40% { opacity: 1}
-    60% { opacity: 0}
-    80% { opacity: 0}
-    100% { opacity: 0}
-}
-  
-@keyframes slide4 {
-    0% {opacity: 0}
-    20% { opacity: 0}
-    40% { opacity: 0}
-    60% { opacity: 1}
-    80% { opacity: 0}
-    100% { opacity: 0}
-}
-  
-@keyframes slide5 {
-    0% {opacity: 0}
-    20% { opacity: 0}
-    40% { opacity: 0}
-    60% { opacity: 0}
-    80% { opacity: 1}
-    100% { opacity: 0}
-}
-
-/*Descrição Projetos*/
-.description {
-	width: 50%;
-	padding-left: 10%;
-}
 
 .subtitle {
 	font-weight: 500;
@@ -276,7 +175,7 @@ header {
 	width: 80%;
 	margin: 0 auto;
     justify-content: space-between;
-    padding-bottom: 80px;
+    padding-bottom: 110px;
 }
 
 .description1 {
@@ -298,8 +197,42 @@ header {
 	width: 80%;
 	margin: 0 auto;
 	justify-content: space-between;
-	padding-bottom: 80px;
+	padding-top: 50px;
+	padding-bottom: 170px;
 	align-items: baseline;
+}
+
+@keyframes fade {
+    0% {opacity: 1}
+    20% { opacity: 0}
+    40% { opacity: 0}
+    60% { opacity: 0}
+    80% { opacity: 0}
+    100% { opacity: 1}
+}
+
+.graphic-design {
+	animation: fade 1s;
+}
+
+.editorial-design {
+	animation: fade 1s;
+	animation-delay: 1s;
+}
+
+.illustration {
+	animation: fade 1s;
+	animation-delay: 2s;
+}
+
+.ux-design {
+	animation: fade 1s;
+	animation-delay: 3s;
+}
+
+.visual-design {
+	animation: fade 1s;
+	animation-delay: 4s;
 }
 
 .icons {
@@ -345,8 +278,8 @@ header {
 	display: block;
 	width: 100%;
 	height: auto;
-	padding-bottom: 60px;
 	padding-top: 15px;
+	padding-bottom: 60px;
 	text-align: center;
 }
 
