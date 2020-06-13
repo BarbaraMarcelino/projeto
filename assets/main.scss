@@ -167,6 +167,7 @@ header {
 	grid-template-columns: auto auto;
 	column-gap: 50px;
 	padding-bottom: 50px;
+	padding-left: 30px;
 	max-width: 1200px;
 	margin: auto;
  }
@@ -310,4 +311,213 @@ header {
 .behance {
 	width: 3%;
 }
+
+/*mediaquerries*/
+
+@media (max-width: 1080px) {
+	
+	/*header*/
+	.container-intro > h2 {
+		width: 50%;
+		margin-left: 100px;
+	}
+}
+
+@media (max-width: 720px) {
+	
+	/*menu - como colocar navegaçao dentro de icon menu?*/
+	.iconmenu {
+		display: flex;
+		width: 4%;
+		margin-right: 50px;
+		padding-top: 20px;
+	}
+
+	nav {
+		display: none;
+	}
+
+	/*header*/
+	.container-intro > h2 {
+		width: 50%;
+		margin-left: 80px;
+	}
+
+	h2 {
+		font-size: 40px;
+		line-height: 60px;
+	}
+
+	/*about*/
+	.mystory {
+		width: 70%;
+		display: flex;
+		margin: 0 auto; 
+	}
+
+	/*projects*/
+	.container {
+		display: block;
+		padding-right: 30px;
+	}
+
+	.images {
+		width: 100%;
+	}
+
+	.description {
+		width: 80%;
+	}
+
+	/*formation*/
+	.container1 {
+		display: block;
+		margin-left: 40px;
+	}
+
+	.description1 {
+		width: 80%;
+		padding-bottom: 10px;
+	}
+
+	h5 {
+		font-size: 20px;
+		margin-bottom: 10px;
+		margin-top: 10px;
+	}
+
+	/*skills - Como colocar só dois icons lado a lado? A animaçao ja nao funciona bem, é possivel aparecer só quando se faz scroll?*/
+	.container2 {
+		display: block;
+		padding-top: 0;
+	}
+
+	.icons {
+		margin: 0 auto;
+		width: 40%;
+		padding-top: 30px;
+	}
+
+	.icons:first-child {
+		padding-top: 0;
+	}
+
+	/*footer*/
+	.letter {
+		width: 5%;
+	}
+
+	.thankyou {
+		font-size: 14px;
+	}
+
+	.footer1 p {
+		font-size: 14px;
+	}
+
+	.linkedin {
+		width: 5%;
+	}
+
+	.behance {
+		width: 5%;
+	}
+}
+
+@media (max-width: 550px) {
+
+	h2 {
+		font-size: 32px;
+		line-height: 50px;
+	}
+}
+
+@media (max-width: 450px) {
+
+	h2 {
+		font-size: 28px;
+		line-height: 50px;
+	}
+
+	h3 {
+		font-size: 40px;
+		padding-top: 100px;
+	}
+
+	h4 {
+		font-size: 20px;
+		line-height: 30px;
+	}
+
+	h6 {
+		margin-top: 15px;
+	}
+
+	/*menu*/
+	.menu:first-child {
+		padding-left: 10px;
+	}
+
+	.iconmenu {
+		margin-right: 40px;
+		width: 5%;
+	}
+
+	/*header*/
+	.ilustracao {
+		top: 20%;
+	}
+
+	.container-intro > h2 {
+		width: 80%;
+		margin-left: 30px;
+	}
+
+	/*about*/
+	.mystory {
+		width: 85%; 
+	}
+
+	/*projects*/
+	.container {
+		padding-bottom: 25px;
+	}
+
+	/*formation*/
+	.container1 {
+		margin-left: 45px;
+	}
+
+	/*skills*/
+	.container2 {
+		padding-bottom: 25px;
+	}
+
+	.icons {
+		width: 60%;
+	}
+
+	/*footer*/
+	.container-letter {
+		padding-top: 15%;
+	}
+
+	.letter {
+		width: 10%;
+	}
+
+	.footer1 p {
+		display: block;
+	}
+
+	.linkedin {
+		width: 7%;
+	}
+
+	.behance {
+		width: 7%;
+	}
+}
+
+
 
