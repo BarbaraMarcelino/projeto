@@ -15,59 +15,66 @@ h1 {
 	letter-spacing: 0.1em;
 	text-transform: uppercase;
 	font-size: 16px;
+	color: #6C22F5;
 }
 
 h2 {
-	font-weight: 500;
+	font-weight: 600;
 	font-size: 50px;
 	line-height: 75px;
 	letter-spacing: 0.03em;
+	color: #33404D;
 }
 
 h3 {
 	text-align: center;
-	font-weight: 500;
+	font-weight: 600;
 	font-size: 48px;
 	letter-spacing: 0.05em;
 	padding-top: 150px;
     padding-bottom: 70px;
 	margin: 0;
 	text-transform: uppercase;
+	color: #33404D;
 }
 
 h4 {
-	font-weight: 500;
+	font-weight: 600;
 	font-size: 28px;
 	line-height: 42px;
 	letter-spacing: 0.05em;
 	margin: 0;
+	color: #33404D;
 }
 
 h5 {
-	font-weight: 500;
+	font-weight: 600;
 	font-size: 24px;
 	letter-spacing: 0.05em;
 	text-transform: uppercase;
 	margin-top: 0;
+	color: #6C22F5;
 }
 
 h6 {
 	font-size: 16px;
-	font-weight: 400;
+	font-weight: 500;
+	color: #6C22F5;
 }
 
 p {
 	font-size: 16px;
 	line-height: 30px;
+	color: #33404D;
 }
 
 /*Menu*/
 a:hover {
-    color: lightgrey;
+    color: #6C22F5;;
   }
 
 a {
-	color: black;
+	color: #33404D;
     text-decoration: none;
     font-size: 16px;
 }
@@ -146,7 +153,7 @@ header {
 	z-index: -1;
 }
 
-/*Homepage - About (My Story)*/
+/*Homepage - About*/
 .mystory {
 	width: 50%;
 	display: flex;
@@ -189,6 +196,7 @@ header {
 .curso, .curso1 {
 	margin: 0;
 	font-weight: 500;
+	color: #6C22F5;
 }
 
 /*Skills*/
@@ -245,7 +253,7 @@ header {
 }
 
 .curso {
-	font-weight: 500;
+	font-weight: 600;
 }
 
 .texto1 {
@@ -263,10 +271,11 @@ header {
 }
 
 .thankyou {
-	font-weight: 500;
+	font-weight: 600;
 	font-size: 16px;
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
+	color: #6C22F5;
 }
 
 .letter {
@@ -288,7 +297,7 @@ header {
 }
 
 .footer1 p:first-child {
-	font-weight: 500;
+	font-weight: 600;
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
 }
@@ -301,3 +310,4 @@ header {
 .behance {
 	width: 3%;
 }
+
