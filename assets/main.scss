@@ -29,10 +29,10 @@ h2 {
 h3 {
 	text-align: center;
 	font-weight: 500;
-	font-size: 24px;
+	font-size: 48px;
 	letter-spacing: 0.05em;
-	padding-top: 80px;
-	padding-bottom: 70px;
+	padding-top: 150px;
+    padding-bottom: 70px;
 	margin: 0;
 	text-transform: uppercase;
 }
@@ -128,7 +128,6 @@ header {
 
 .seta {
     padding-top: 45px;
-    padding-bottom: 45px;
 	justify-content: center;
 	display: flex;
 }
@@ -154,10 +153,175 @@ header {
 	width: 50%;
 	display: flex;
     margin: 0 auto;
-    padding-bottom: 100px; 
+    padding-bottom: 150px; 
 }
 
-/*footer*/
+/*Página Projects*/
+/*
+.container {
+	position: relative;
+  	display: flex;
+  	align-items: flex-end;
+  	padding-bottom: 50px;
+ }
+
+ #projetos {
+ 	width: 80%;
+ 	margin: 0 auto;
+ }
+
+
+.images {
+	width: 50%;
+	height: auto;
+	padding-bottom: 25px;
+}
+*/
+
+/*Animação Projeto 1*/
+.container {
+    display: grid;
+    grid-template-columns: auto auto;
+  	padding-bottom: 50px;
+ }
+
+.animation1, .animation2, .animation3 {
+	position: relative;
+}
+
+.image1, .image2, .image3, .image4, .image5, .image6, .image7, .image8, .image9, .image10, .image11, .image12, .image13, .image14, .image15 {
+    position: absolute;
+    padding-bottom: 25px;
+}
+
+.image1, .image6, .image11 {
+    animation: slide1 25s infinite;
+}
+  
+.image2, .image7, .image12 {
+    animation: slide2 25s infinite;
+}
+  
+.image3, .image8, .image13 {
+    animation: slide3 25s infinite;
+}
+  
+.image4, .image9, .image14 {
+    animation: slide4 25s infinite;
+}
+  
+.image5, .image10, .image15 {
+    animation: slide5 25s infinite;
+}
+
+@keyframes slide1 {
+    0% {opacity: 1}
+    20% { opacity: 0}
+    40% { opacity: 0}
+    60% { opacity: 0}
+    80% { opacity: 0}
+    100% { opacity: 1}
+}
+  
+@keyframes slide2 {
+    0% {opacity: 0}
+    20% { opacity: 1}
+    40% { opacity: 0}
+    60% { opacity: 0}
+    80% { opacity: 0}
+    100% { opacity: 0}
+}
+  
+@keyframes slide3 {
+    0% {opacity: 0}
+    20% { opacity: 0}
+    40% { opacity: 1}
+    60% { opacity: 0}
+    80% { opacity: 0}
+    100% { opacity: 0}
+}
+  
+@keyframes slide4 {
+    0% {opacity: 0}
+    20% { opacity: 0}
+    40% { opacity: 0}
+    60% { opacity: 1}
+    80% { opacity: 0}
+    100% { opacity: 0}
+}
+  
+@keyframes slide5 {
+    0% {opacity: 0}
+    20% { opacity: 0}
+    40% { opacity: 0}
+    60% { opacity: 0}
+    80% { opacity: 1}
+    100% { opacity: 0}
+}
+
+/*Descrição Projetos*/
+.description {
+	width: 50%;
+	padding-left: 10%;
+}
+
+.subtitle {
+	font-weight: 500;
+	font-size: 14px;
+}
+
+/*Formation*/
+.container1 {
+	display: flex;
+	width: 80%;
+	margin: 0 auto;
+    justify-content: space-between;
+    padding-bottom: 80px;
+}
+
+.description1 {
+	padding-right: 5%;
+}
+
+.description1:last-child {
+	padding-right: 0;
+}
+
+.curso, .curso1 {
+	margin: 0;
+	font-weight: 500;
+}
+
+/*Skills*/
+.container2 {
+	display: flex;
+	width: 80%;
+	margin: 0 auto;
+	justify-content: space-between;
+	padding-bottom: 80px;
+	align-items: baseline;
+}
+
+.icons {
+    text-align: center;
+	width: 60%;
+}
+
+.images1 {
+	width: 50%;
+}
+
+.curso {
+	font-weight: 500;
+}
+
+.texto1 {
+	font-size: 14px;
+	line-height: 24px;
+	color: #AEAEAE;
+}
+
+/*Footer*/
 .container-letter {
 	background: #F2F2F2;
 	text-align: center;
