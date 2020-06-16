@@ -4,79 +4,116 @@
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap');
 
+/*Variáveis*/
 $myFont: "Poppins", "Arial", sans-serif;
+$primary-color: #33404D;
+$secondary-color: #6C22F5;
+$font-weight: 600;
+$font-weight-2: 500;
+$background-color: #F2F2F2;
+$text-style: uppercase;
+$spacing: 0.05em;
+$base-font-size: 16px;
+$small-font-size: 14px;
+$center-text: center;
+$width-size: 50%;
+$width-size-2: 100%;
 
+/*Mixins*/
+@mixin containers {
+	display: flex;
+	width: 80%;
+	margin: 0 auto;
+    justify-content: space-between;
+}
+
+@mixin display-margin {
+	display: flex;
+    margin: 0 auto;
+}
+
+@mixin width-height {
+	width: 35%;
+	height: auto;
+}
+
+@mixin headers-style {
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+/*Estrutura*/
 body {
 	font-family: $myFont;
 }
 
 h1 {
-	font-weight: 600;
+	font-weight: $font-weight;
 	letter-spacing: 0.1em;
-	text-transform: uppercase;
-	font-size: 16px;
-	color: #6C22F5;
+	text-transform: $text-style;
+	font-size: $base-font-size;
+	color: $secondary-color;
 }
 
 h2 {
-	font-weight: 600;
+	font-weight: $font-weight;
 	font-size: 50px;
 	line-height: 75px;
 	letter-spacing: 0.03em;
-	color: #33404D;
+	color: $primary-color;
 }
 
 h3 {
-	text-align: center;
-	font-weight: 600;
+	text-align: $center-text;
+	font-weight: $font-weight;
 	font-size: 48px;
-	letter-spacing: 0.05em;
+	letter-spacing: $spacing;
 	padding-top: 150px;
     padding-bottom: 70px;
 	margin: 0;
-	text-transform: uppercase;
-	color: #33404D;
+	text-transform: $text-style;
+	color: $primary-color;
 }
 
 h4 {
-	font-weight: 600;
+	font-weight: $font-weight;
 	font-size: 28px;
 	line-height: 42px;
-	letter-spacing: 0.05em;
+	letter-spacing: $spacing;
 	margin: 0;
-	color: #33404D;
+	color: $primary-color;
 }
 
 h5 {
-	font-weight: 600;
+	font-weight: $font-weight;
 	font-size: 24px;
-	letter-spacing: 0.05em;
-	text-transform: uppercase;
+	letter-spacing: $spacing;
+	text-transform: $text-style;
 	margin-top: 0;
-	color: #6C22F5;
+	color: $secondary-color;
 }
 
 h6 {
-	font-size: 16px;
-	font-weight: 500;
-	color: #6C22F5;
+	font-size: $base-font-size;
+	font-weight: $font-weight-2;
+	color: $secondary-color;
 }
 
 p {
-	font-size: 16px;
+	font-size: $base-font-size;
 	line-height: 30px;
-	color: #33404D;
+	color: $primary-color;
 }
 
 /*Menu*/
 a:hover {
-    color: #6C22F5;;
+    color: $secondary-color;
   }
 
 a {
-	color: #33404D;
+	color: $primary-color;
     text-decoration: none;
-    font-size: 16px;
+    font-size: $base-font-size;
 }
 
 li {
@@ -90,7 +127,7 @@ li {
 .menu {
 	position: fixed;
 	display: flex;
-	width: 100%;
+	width: $width-size-2;
 	height: auto;
 	top: 0px;
 	align-items: baseline;
@@ -118,7 +155,7 @@ nav {
 
 /*Homepage - Header*/
 header {
-	width: 100%;
+	width: $width-size-2;
 }
 
 .container-intro {
@@ -138,16 +175,13 @@ header {
 }
 
 .seta img {
-	width: 30%;
-	height: auto;
-	display: flex;
-	margin: 0 auto;     
+	@include width-height;
+	@include display-margin;    
 }
 
 .ilustracao {
 	position: absolute;
-	width: 35%;
-	height: auto;
+	@include width-height;
 	right: 10%;
 	top: 10%;
 	z-index: -1;
@@ -155,9 +189,8 @@ header {
 
 /*Homepage - About*/
 .mystory {
-	width: 50%;
-	display: flex;
-    margin: 0 auto;
+	width: $width-size;
+	@include display-margin;
     padding-bottom: 150px; 
 }
 
@@ -173,16 +206,13 @@ header {
  }
 
 .subtitle {
-	font-weight: 500;
-	font-size: 14px;
+	font-weight: $font-weight-2;
+	font-size: $small-font-size;
 }
 
 /*Formation*/
 .container1 {
-	display: flex;
-	width: 80%;
-	margin: 0 auto;
-    justify-content: space-between;
+	@include containers;
     padding-bottom: 110px;
 }
 
@@ -196,16 +226,13 @@ header {
 
 .curso, .curso1 {
 	margin: 0;
-	font-weight: 500;
-	color: #6C22F5;
+	font-weight: $font-weight-2;
+	color: $secondary-color;
 }
 
 /*Skills*/
 .container2 {
-	display: flex;
-	width: 80%;
-	margin: 0 auto;
-	justify-content: space-between;
+	@include containers;
 	padding-top: 50px;
 	padding-bottom: 170px;
 	align-items: baseline;
@@ -225,58 +252,58 @@ header {
 }
 
 .editorial-design {
-	animation: fade 1s;
+	@extend .graphic-design;
 	animation-delay: 1s;
 }
 
 .illustration {
-	animation: fade 1s;
+	@extend .graphic-design;
 	animation-delay: 2s;
 }
 
 .ux-design {
-	animation: fade 1s;
+	@extend .graphic-design;
 	animation-delay: 3s;
 }
 
 .visual-design {
-	animation: fade 1s;
+	@extend .graphic-design;
 	animation-delay: 4s;
 }
 
 .icons {
-    text-align: center;
+    text-align: $center-text;
 	width: 60%;
 }
 
 .images1 {
-	width: 50%;
+	width: $width-size;
 }
 
 .curso {
-	font-weight: 600;
+	font-weight: $font-weight;
 }
 
 .texto1 {
-	font-size: 14px;
+	font-size: $small-font-size;
 	line-height: 24px;
 	color: #AEAEAE;
 }
 
 /*Footer*/
 .container-letter {
-	background: #F2F2F2;
-	text-align: center;
+	background: $background-color;
+	text-align: $center-text;
 	padding-top: 5%;
 	padding-bottom: 1%;
 }
 
 .thankyou {
-	font-weight: 600;
-	font-size: 16px;
-	text-transform: uppercase;
-	letter-spacing: 0.05em;
-	color: #6C22F5;
+	font-weight: $font-weight-2;
+	font-size: $base-font-size;
+	text-transform: $text-style;
+	letter-spacing: $spacing;
+	color: $secondary-color;
 }
 
 .letter {
@@ -284,13 +311,13 @@ header {
 }
 
 .footer-container {
-	background: #F2F2F2;
+	background: $background-color;
 	display: block;
-	width: 100%;
+	width: $width-size-2;
 	height: auto;
 	padding-top: 15px;
 	padding-bottom: 60px;
-	text-align: center;
+	text-align: $center-text;
 }
 
 .footer1 p {
@@ -298,13 +325,13 @@ header {
 }
 
 .footer1 p:first-child {
-	font-weight: 600;
-	text-transform: uppercase;
-	letter-spacing: 0.05em;
+	font-weight: $font-weight;
+	text-transform: $text-style;
+	letter-spacing: $spacing;
 }
 
 .linkedin {
-	width: 3%;
+	@extend .behance;
 	padding-right: 15px;
 }
 
@@ -312,13 +339,13 @@ header {
 	width: 3%;
 }
 
-/*mediaquerries*/
+/*Mediaquerries*/
 
 @media (max-width: 1080px) {
 	
 	/*header*/
 	.container-intro > h2 {
-		width: 50%;
+		width: $width-size;
 		margin-left: 100px;
 	}
 }
@@ -332,7 +359,7 @@ header {
 	}
 
 	.images {
-		width: 100%;
+		width: $width-size-2;
 	}
 
 	.description {
@@ -356,7 +383,7 @@ header {
 
 	/*header*/
 	.container-intro > h2 {
-		width: 50%;
+		width: $width-size;
 		margin-left: 80px;
 	}
 
@@ -411,18 +438,14 @@ header {
 	}
 
 	.thankyou {
-		font-size: 14px;
+		font-size: $small-font-size;
 	}
 
 	.footer1 p {
-		font-size: 14px;
+		font-size: $small-font-size;
 	}
 
-	.linkedin {
-		width: 5%;
-	}
-
-	.behance {
+	.linkedin, .behance {
 		width: 5%;
 	}
 }
@@ -513,11 +536,7 @@ header {
 		display: block;
 	}
 
-	.linkedin {
-		width: 7%;
-	}
-
-	.behance {
+	.linkedin, .behance {
 		width: 7%;
 	}
 }
