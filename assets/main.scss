@@ -323,6 +323,23 @@ header {
 	}
 }
 
+@media (max-width: 950px) {
+	
+	/*projects*/
+	.container {
+		display: block;
+		padding-right: 30px;
+	}
+
+	.images {
+		width: 100%;
+	}
+
+	.description {
+		width: 80%;
+	}
+}
+
 @media (max-width: 720px) {
 	
 	/*menu - como colocar navegaçao dentro de icon menu?*/
@@ -353,20 +370,6 @@ header {
 		width: 70%;
 		display: flex;
 		margin: 0 auto; 
-	}
-
-	/*projects*/
-	.container {
-		display: block;
-		padding-right: 30px;
-	}
-
-	.images {
-		width: 100%;
-	}
-
-	.description {
-		width: 80%;
 	}
 
 	/*formation*/
