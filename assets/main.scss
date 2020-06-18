@@ -108,7 +108,7 @@ p {
 /*Menu*/
 a:hover {
     color: $secondary-color;
-  }
+}
 
 a {
 	color: $primary-color;
@@ -372,17 +372,17 @@ header {
 }
 
 @media (max-width: 720px) {
-
+	/*menu*/
 	.navigation {
 
 		&.open {
 			position: fixed;
+			display: block;
 			top: 0;
 			right: 0;
 			bottom: 0;
 			left: 0;
 			background: $secondary-color;
-			display: block;
 		}
 
 		nav {
@@ -390,20 +390,37 @@ header {
 
 			li {
 				width: 100%;
+				padding-bottom: 50px;
+				padding-top: 50px;
 			}
 		}
 
 		.iconcross {
 			position: absolute;
+			display: block;
+			position: absolute;
+			right: 0;
+			top: 0;
+			width: 4%;
+			padding-top: 20px;
+			padding-right: 20px;
 		}
 	}
 	
-	/*menu - como colocar navegaçao dentro de icon menu?*/
 	.iconmenu {
 		display: flex;
 		width: 4%;
 		margin-right: 50px;
 		padding-top: 20px;
+	}
+
+	a {
+		color: white;
+		font-size: 50px;
+	}
+
+	a:hover {
+		color: $primary-color;
 	}
 
 	nav {
@@ -445,7 +462,7 @@ header {
 		margin-top: 10px;
 	}
 
-	/*skills - Como colocar só dois icons lado a lado? A animaçao ja nao funciona bem, é possivel aparecer só quando se faz scroll?*/
+	/*skills*/
 	.container2 {
 		display: block;
 		padding-top: 0;
